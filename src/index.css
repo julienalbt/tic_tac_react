@@ -13,7 +13,7 @@ body {
 
   .jump-btn {
     border: none;
-    width: 150px;
+    width: 175px;
     height: 30px;
     margin: 10px 0;
     cursor: pointer;
@@ -43,6 +43,10 @@ body {
     padding: 0;
     text-align: center;
     width: 34px;
+  }
+  
+  .square--winning {
+    background-color: yellow;
   }
   
   .square:focus {
