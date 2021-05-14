@@ -6,17 +6,28 @@ body {
   }
   
   ol, ul {
-    padding-left: 30px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .jump-btn {
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .jump-btn:hover {
+    background-color: aqua;
   }
   
   .board-row:after {
     clear: both;
     content: "";
     display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
   }
   
   .square {
@@ -38,18 +49,26 @@ body {
     outline: none;
   }
   
+  .square:hover {
+    background-color: aqua;
+    cursor: pointer;
+  }
+
   .kbd-navigation .square:focus {
     background: #ddd;
   }
   
   .game {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
-  
+
   .game-info {
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
+
   
